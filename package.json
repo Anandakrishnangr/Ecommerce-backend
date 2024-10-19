@@ -5,16 +5,18 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": " env-cmd -f .env.production node --no-warnings --watch --loader @babel/register ./start.js"
+    "dev": " env-cmd -f .env.development node --no-warnings --watch --loader @babel/register ./start.js"
   },
   "author": "anandakrishnangr",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "babel-node": "^0.0.1-security",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.3",
     "env-cmd": "^10.1.0",
     "express": "^4.21.1",
+    "joi": "^17.13.3",
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.7.1"
   },
